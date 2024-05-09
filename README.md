@@ -1,25 +1,10 @@
 # Luraph_Deobfuscator
-Automatically deobfuscate Luraph scripts. Tested on Luraph scripts between v11.5 and v11.8.1 (May 1, 2020 release)
+Automatically deobfuscate Luraph scripts.
 
 Requires Java 8 to run.
 
-# Binary Release (Version 1.0.0)
-https://github.com/TheGreatSageEqualToHeaven/LuraphDeobfuscator/releases/download/v1.0.0/LuraphDevirtualizer.jar
-
-# Discord Group
-Come discuss this project in my Lua discord 
-
-https://discord.gg/cdhcryv
-
-Add me on discord
-
- ```The Great Sage Equal To Heaven#7780```
-
-# Motivation
-This project was created for intellectual purposes as a way to explore code deobfuscation techniques on Lua scripts obfuscated by Luraph, which is a tool used to obfuscate Lua scripts. This Lua obfuscator has been used by cybercriminals as a way of protecting malicious exploits they sell for Robolox or bots for World of Warcraft. This project may be of interest to game security developers to prevent cheating in their games by discovering how hackers are breaking their code.
-
+# Understanding
 Luraph scripts are extremely complicated to tackle, especially in an automated matter. The process is essentially.
-
 - Lex and parse input Lua file to generate parse tree
 - Convert parse tree into abstract syntax treee
 - Optimize the abstract syntax tree
@@ -38,7 +23,6 @@ LuraphDeobfuscator provides a Lua deobfuscation engine which can be ported to ot
 
 # Simple usage
 Generate a .luac file from an obfuscated Luraph VM script
-
 
 ```java -jar LuraphDeobfuscator.jar -i obfuscated.lua -o obfuscated.luac```
 
